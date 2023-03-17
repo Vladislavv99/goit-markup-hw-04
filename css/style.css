@@ -218,6 +218,17 @@ button {
     cursor: pointer;
 }
 
+.future-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
 .future-flex {
     flex-wrap: wrap;
     align-items: center;
@@ -316,6 +327,29 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--team-text-color);
+    margin-bottom: 8px;
+}
+
+.social-list-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.social-link-icon {
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link-icon:hover,
+.social-link-icon:focus {
+    background-color: #404BBF; 
 }
 
 /* For portfolio.html */
