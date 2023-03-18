@@ -404,8 +404,8 @@ button {
     align-items: center;
 }
 
-.company-block:hover,
-.company-block:focus {
+.company-link:hover,
+.company-link:focus {
     border: 1px solid #404BBF;
     outline: transparent;
 }
@@ -414,8 +414,8 @@ button {
     fill:#8e8f99;
 }
 
-.company-block:hover .company-item,
-.company-block:focus .company-item {
+.company-link:hover .company-item,
+.company-link:focus .company-item {
     fill: #404BBF;
     outline: transparent;
 }
@@ -531,4 +531,9 @@ button {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-box:hover,
+.portfolio-box:focus {
+    outline: transparent;
 }
