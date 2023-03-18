@@ -13,6 +13,8 @@
     --navigation-link-color: #2E2F42;
     --hero-title-color: #ffffff;
     --accent-color: #404BBF;
+    --active-portfolio-border-color: #F4F4FD;
+    --portfolio-text-border-color: #E7E9FC;
 }
 
 
@@ -138,10 +140,11 @@ button {
 }
 
 .footer {
+    margin: 0 auto;
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
-
+    width: 1440px;
 }
 
 .logo-fotter {
@@ -155,7 +158,40 @@ button {
     display: inline-block;
 }
 
+.footer-social-text {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
 
+
+.footer-content {
+    display: flex;
+    gap: 120px;
+}
+
+.footer-social-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31D0AA;
+}
 
 .footer-text {
     width: 264px;
@@ -163,6 +199,8 @@ button {
     letter-spacing: 0.02em;
     color: var(--footer-text-color);
 }
+
+
 
 .current {
     color: var(--accent-color);
@@ -298,6 +336,7 @@ button {
 .taem {
     background-color: var(--section-team-color);
     margin: 0 auto;
+    width: 1440px;
 }
 
 .taem-item {
@@ -350,6 +389,39 @@ button {
 .social-link-icon:hover,
 .social-link-icon:focus {
     background-color: #404BBF; 
+}
+
+.company-list {
+    display: flex;
+    gap: 24px;
+}
+
+.company-block {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-block:hover,
+.company-block:focus {
+    border: 1px solid #404BBF;
+    outline: transparent;
+}
+
+.company-item {
+    fill:#8e8f99;
+}
+
+.company-block:hover .company-item,
+.company-block:focus .company-item {
+    fill: #404BBF;
+    outline: transparent;
+}
+
+.company-link {
+    padding: 16px 32px;
 }
 
 /* For portfolio.html */
@@ -441,7 +513,7 @@ button {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--portfolio-text-border-color);
     border-top: none;
 }
 
@@ -450,4 +522,13 @@ button {
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
+}
+
+.portfolio-box:hover .portfolio-text-conteiner,
+.portfolio-box:focus .portfolio-text-conteiner{
+    border: 1px solid var(--active-portfolio-border-color);
+    border-top: none;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
