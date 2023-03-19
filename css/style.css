@@ -88,6 +88,9 @@ button {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-info {
@@ -144,7 +147,6 @@ button {
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
-    width: 1440px;
 }
 
 .logo-fotter {
@@ -336,7 +338,6 @@ button {
 .taem {
     background-color: var(--section-team-color);
     margin: 0 auto;
-    width: 1440px;
 }
 
 .taem-item {
@@ -394,18 +395,12 @@ button {
 .company-list {
     display: flex;
     gap: 24px;
-}
-
-.company-block {
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .company-link:hover,
 .company-link:focus {
     border-color: #404BBF;
-    outline: transparent;
 }
 
 .company-item {
@@ -415,13 +410,14 @@ button {
 .company-link:hover .company-item,
 .company-link:focus .company-item {
     fill: #404BBF;
-    outline: transparent;
 }
 
 .company-link {
+    display: block;
     border-radius: 4px;
     border: 1px solid #8E8F99;
     padding: 16px 32px;
+    outline: transparent;
 }
 
 /* For portfolio.html */
